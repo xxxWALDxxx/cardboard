@@ -1,0 +1,101 @@
+.background-main
+	height: 530px
+	background:  url(../img/background-img.jpg) center no-repeat
+	z-index: 0
+	position: relative
+	&::before
+		position: absolute
+		content: ''
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,0.5)
+		z-index: -1
+@keyframes move
+	0% 
+		opacity: 0
+		transform: rotate(-90deg)
+	
+	100% 
+		opacity: 1
+		transform: rotate(0deg)
+	
+.animate
+	animation-name: move
+	animation-duration: 2s
+	animation-delay: 0.4s
+	animation: move 1s 
+.main
+	width: 970px
+	height: 100%
+	align-items: center
+	display: flex
+	justify-content: center
+	align-content: center
+	margin: 0 auto 0 auto
+	&-img
+		align-self: center
+	&-text
+		margin-left: 50px
+		&-title
+			color: #ffffff
+			margin-left: 22px
+			z-index: 0
+			position: relative
+		&-title>h1
+			font-size: 41px
+			line-height: 42px
+			/* Text style for "Производст" */
+			font-family: "Roboto-Bold"
+			font-weight: 700
+			margin-bottom: 0
+		&-title>p
+			margin-top: 0
+			line-height: 42px
+			/* Text style for "Производст" */
+			font-family: "Roboto-Regular"
+			font-size: 28px
+			font-weight: 400
+		&-form
+			background: url(../img/form-text-back.png)
+			width: 535px
+			margin-right: 0
+			&-subtitle
+				color: #ffffff
+				font-family: "Roboto Light"
+				font-size: 20px
+				font-weight: 300
+				line-height: 30px
+				padding: 30px 87px 0px 27px
+				padding-left: 27px
+			&-subtitle>span
+				font-family: "Roboto-Bold"
+				font-weight: 700
+				text-transform: uppercase
+			&-phone
+				display: flex
+				justify-content: center
+				&-number
+					color: #373737
+					font-family: Roboto
+					font-size: 14px
+					font-weight: 300
+					background: #fff
+					border: 1px solid #afafaf
+					border-radius: 5px
+					z-index: 2
+					width: 311px
+					height: 56px
+					margin-right: 10px
+					padding-left: 20px
+				&-button
+					width: 161px
+					height: 56px
+			&-phone-small
+				margin: 0px 0px 0px 27px 
+				color: #ffffff
+				font-family: Roboto
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
