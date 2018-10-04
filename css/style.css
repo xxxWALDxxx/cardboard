@@ -22,7 +22,7 @@ img {
   margin: 0 auto 0 auto;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   height: 44px;
 }
 .nav-box {
@@ -770,18 +770,7 @@ img {
   text-align: center;
 }
 
-@media (min-width: 577px) {
-  .contacts-block {
-    position: absolute;
-  }
-  .contacts-block__img {
-    margin-left: 34px;
-  }
-  .contacts-block__text {
-    margin-left: 12px;
-  }
-}
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .header {
     padding-top: 0px;
     width: 100%;
@@ -989,7 +978,7 @@ img {
   .produce-slider-incidental-img-img {
     height: 160px;
     padding: 0px 10px;
-    width: auto;
+    width: 250px;
   }
   .produce-slider-incidental-arrow {
     height: 160px;
